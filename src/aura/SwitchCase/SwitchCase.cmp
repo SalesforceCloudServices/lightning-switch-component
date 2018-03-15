@@ -1,0 +1,14 @@
+<aura:component >
+	
+	<!--Attributes-->
+	<aura:attribute name="name" type="String" required="true" access="public"/>
+	<aura:attribute name="active" type="Boolean" default="false" access="public"/>
+
+	<!--Content-->
+	<div class="slds-panel">
+		<aura:if isTrue="{!v.active}">
+			{!v.body}
+		</aura:if>
+	</div>
+
+</aura:component>

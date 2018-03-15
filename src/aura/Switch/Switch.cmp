@@ -1,0 +1,15 @@
+<aura:component >
+	
+	<!--Attributes-->
+	<aura:attribute name="switchCases" type="Aura.component[]" access="private"/>
+	<aura:attribute name="activeSwitchCase" type="String" access="public"/>
+
+	<!--Value Change Listeners-->
+   	<aura:handler name="change" value="{!v.activeSwitchCase}" action="{!c.changeActiveCase}"/>
+
+	<!--Content-->
+	<div>
+		{!v.body}
+	</div>
+
+</aura:component>

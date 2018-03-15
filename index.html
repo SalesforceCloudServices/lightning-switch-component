@@ -1,0 +1,51 @@
+<h1><a id="Lightning_Switch_Component_0"></a>Lightning Switch Component</h1>
+<p>Lightning Switch Component helps in writing more readable and managable code compare to nested aura:if component.</p>
+<h3><a id="Using_auraif_3"></a>Using aura:if…</h3>
+<pre><code class="language-sh">&lt;apex:component&gt;
+    &lt;aura:<span class="hljs-keyword">if</span> isTrue=<span class="hljs-string">"firstCondition"</span>&gt;
+        First section is displayed 
+        &lt;aura:<span class="hljs-built_in">set</span> attribute=<span class="hljs-string">"else"</span>&gt;
+            &lt;aura:<span class="hljs-keyword">if</span> isTrue=<span class="hljs-string">"secondCondition"</span>&gt;
+                Second section is displayed
+                &lt;aura:<span class="hljs-built_in">set</span> attribute=<span class="hljs-string">"else"</span>&gt;
+                    &lt;aura:<span class="hljs-keyword">if</span> isTrue=<span class="hljs-string">"thirdCondition"</span>&gt;
+                        Third section is displayed
+                        &lt;aura:<span class="hljs-built_in">set</span> attribute=<span class="hljs-string">"else"</span>&gt;
+                            &lt;aura:<span class="hljs-keyword">if</span> isTrue=<span class="hljs-string">"fourthCondition"</span>&gt;
+                                Fourth section is displayed
+                                &lt;aura:<span class="hljs-built_in">set</span> attribute=<span class="hljs-string">"else"</span>&gt;
+                                    Fifth section is displayed
+                                &lt;/aura:<span class="hljs-built_in">set</span>&gt;
+                            &lt;/aura:<span class="hljs-keyword">if</span>&gt;
+                        &lt;/aura:<span class="hljs-built_in">set</span>&gt;
+                    &lt;/aura:<span class="hljs-keyword">if</span>&gt;
+                &lt;/aura:<span class="hljs-built_in">set</span>&gt;
+            &lt;/aura:<span class="hljs-keyword">if</span>&gt;
+        &lt;/aura:<span class="hljs-built_in">set</span>&gt;
+    &lt;/aura:<span class="hljs-keyword">if</span>&gt;
+&lt;/apex:component&gt;
+</code></pre>
+<h3><a id="Using_cSwitch_29"></a>Using c:Switch…</h3>
+<pre><code class="language-sh">&lt;apex:component&gt;
+    &lt;c:Switch activeSwitchCase=<span class="hljs-string">"{!v.activeSwitchCaseName}"</span>&gt;
+        &lt;c:SwitchCase name=<span class="hljs-string">"firstSection"</span>&gt;
+            First section is displayed 
+        &lt;/c:SwitchCase&gt;
+        &lt;c:SwitchCase name=<span class="hljs-string">"secondSection"</span>&gt;
+            Second section is displayed 
+        &lt;/c:SwitchCase&gt;
+        &lt;c:SwitchCase name=<span class="hljs-string">"thirdSection"</span>&gt;
+            Third section is displayed 
+        &lt;/c:SwitchCase&gt;
+        &lt;c:SwitchCase name=<span class="hljs-string">"fourthSection"</span>&gt;
+            Fourth section is displayed 
+        &lt;/c:SwitchCase&gt;
+        &lt;c:SwitchCase name=<span class="hljs-string">"fifthSection"</span>&gt;
+            Fifth section is displayed 
+        &lt;/c:SwitchCase&gt;
+    &lt;/c:Switch&gt;
+</code></pre>
+<h3><a id="Installation_51"></a>Installation</h3>
+<p>Install the Lightning Switch Component unmanaged package <a target="_blank" href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000004LmsK">here</a>.</p>
+<h3><a id="Contributors_54"></a>Contributors</h3>
+<p><a target="_blank" href="https://github.com/sgupta9591">Sumit Gupta</a>,  Senior Technical Consultant at Salesforce</p>
