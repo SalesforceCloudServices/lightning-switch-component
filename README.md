@@ -1,5 +1,5 @@
 # Lightning Switch Component
-Lightning Switch Component helps in writing more readable and managable code compare to nested aura:if component.
+Lightning Switch Component helps in writing more readable and manageable code compare to nested aura:if component.
 
 ### Using aura:if...
 ```sh
@@ -51,7 +51,7 @@ Lightning Switch Component helps in writing more readable and managable code com
 ```
 
 ### Installation 
-Install the Lightning Switch Component unmanaged package [here](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000004LmsK).
+Install the Lightning Switch Component unmanaged package [here](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000004ECsI).
 
 ### Contributors
 [Sumit Gupta](https://github.com/sgupta9591),  Senior Technical Consultant at Salesforce
